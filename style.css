@@ -1,0 +1,113 @@
+@font-face {
+  font-family: cust;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&family=Montserrat:wght@400;500&family=Ruda&display=swap");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  background-color: rgb(209, 209, 209);
+}
+
+button,
+.popup-body > span {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 10px;
+}
+
+.container > button {
+  padding: 5px 10px;
+  background-color: rgb(237, 71, 25);
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  transition: transform 0.5s ease;
+}
+
+.container > button:hover {
+  background-color: rgb(128, 230, 213);
+  transform: scale(1.2);
+}
+
+.container > .table {
+  width: 100vw;
+  margin-top: 50px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table td,
+.table th {
+  border: 1px solid rgb(71, 2, 2);
+  padding: 5px 10px;
+}
+
+td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+td:last-child > button {
+  padding-inline: 10px;
+  border-radius: 5px;
+}
+
+.popup {
+  background-color: rgba(114, 114, 114, 0.711);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-body {
+  background-color: white;
+  height: 50vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.popup-body > input,
+.popup-body > select {
+  border: 1px double;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+.popup-body > button {
+  padding: 5px 10px;
+  background-color: rgb(25, 237, 25);
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+
+.popup-body > button:hover {
+  background-color: rgb(128, 230, 128);
+  transform: scaleX(1.1) scaleY(1.2);
+}
+
+.popup-body > span {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
